@@ -19,9 +19,12 @@ btnUp.addEventListener('click',() => {
 })
 
 btnDown.addEventListener('click',() => {
-    cant--
-    cantidad.innerHTML = cant
-    tot = precio * cant
-    total.innerHTML = tot.toLocaleString()
+    if(cant > 0)
+    {
+        cant--
+        cantidad.innerHTML = cant
+        tot = precio * cant
+        total.innerHTML = tot.toLocaleString()
+    }    
 })
 
